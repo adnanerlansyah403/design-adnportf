@@ -13,18 +13,23 @@
 </head>
 <body>
     
-
     <header class="header">
         <div class="container">
 
-            <a href="./index.html" class="logo">
-                <img src="./assets/images/adn.png" alt="">
-            </a>
+            <div class="logo-wrapper">
+                <a href="#home" class="logo">
+                    <img src="./assets/images/adn.png" alt="">
+                </a>
+                
+                <button class="nav-open" data-nav-open>
+                    <img src="./assets/images/icons/bars.svg" alt="">
+                </button>
+            </div>
     
             <nav class="navbar">
                 <ul>
                     <li class="nav-list">
-                        <a href="./index.html" class="nav-link"><span class="span">#</span>home</a>
+                        <a href="#home" class="nav-link"><span class="span">#</span>home</a>
                     </li>
                     <li class="nav-list">
                         <a href="./projects.html" class="nav-link"><span class="span">#</span>works</a>
@@ -37,6 +42,53 @@
                     </li>
                 </ul>
             </nav>
+            
+            <div class="nav-mobile" data-nav-mobile>
+                <div class="nav-header">
+                    <figure class="logo">
+                        <img src="./assets/images/adn.png" alt="">
+                    </figure>
+                    <div class="nav-close">
+                        <button data-nav-close>
+                            <img src="./assets/images/icons/times2.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                
+                <ul class="navs">
+                    <li class="nav-list">
+                        <a href="./index.html"><span class="span">#</span>home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#works"><span class="span">#</span>works</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="./about.html"><span class="span">#</span>about-me</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="./contracts.html"><span class="span">#</span>contacts</a>
+                    </li>
+                </ul>
+
+                <ul class="socials">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/discord.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/figma.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
 
         </div>
 
@@ -49,7 +101,7 @@
                 <div class="container">
 
                     <h1 class="section-title">
-                        <span class="span">/</span>projects
+                        <span class="span">/ </span>projects
                     </h1>
                     <p class="section-subtitle">
                         List of my projects
@@ -61,89 +113,44 @@
             <section class="allproject" style="padding-bottom: 173px;">
                 <div class="container">
 
-                    <div style="margin-bottom: 81px;">
+                    <div class="projects" style="">
                         <h1 class="section-title">
                             <span class="span">#</span>complete-apps
                         </h1>
-    
-                        <!-- List Complete App -->
+
+                        <div class="tabs-wrapper filters-button-group">
+                            <ul class="tabs-list button-group">
+                                <li class="tabs-item">
+                                    <button class="btn btn-secondary is-checked" style="background: transparent;" data-filter="*">All</button>
+                                </li>
+                                <li class="tabs-item">
+                                    <button class="btn btn-secondary" style="background: transparent;" data-filter=".html">HTML</button>
+                                </li>
+                                <li class="tabs-item">
+                                    <button class="btn btn-secondary" style="background: transparent;" data-filter=".css">CSS</button>
+                                </li>
+                                <li class="tabs-item">
+                                    <button class="btn btn-secondary" style="background: transparent;" data-filter=".js">JS</button>
+                                </li>
+                                <li class="tabs-item">
+                                    <button class="btn btn-secondary" style="background: transparent;" data-filter=".nextjs">NextJS</button>
+                                </li>
+                            </ul>
+                        </div>
                         
-                        <div class="card-wrapper">
-    
-                            <div class="card-list col-4">
+                        <div class="card-wrapper grid">
+
+                            <div class="card-list element-item col-4 html css js" data-category="transition">
                                 <figure class="card-img">
-                                    <img src="./assets/images/project1.png" alt="" class="img-cover">
-                                </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        ChertNodes
-                                    </h1>
-                                    <p class="card-text">
-                                        Minecraft servers hosting
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Live &lt;~&gt;
-                                        </a>
-                                        <a href="#" class="btn btn-secondary">
-                                            Cached >=
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card-list col-4">
-                                <figure class="card-img">
-                                    <img src="./assets/images/project2.png" alt="" class="img-cover">
-                                </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        ChertNodes
-                                    </h1>
-                                    <p class="card-text">
-                                        Minecraft servers hosting
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Live &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-list col-4">
-                                <figure class="card-img">
-                                    <img src="./assets/images/project3.png" alt="" class="img-cover">
-                                </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        ChertNodes
-                                    </h1>
-                                    <p class="card-text">
-                                        Minecraft servers hosting
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-secondary">
-                                            Cached >=
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-list col-4">
-                                <figure class="card-img">
-                                    <img src="./assets/images/project4.png" alt="" class="img-cover">
+                                    <img src="./assets/images/foodfast.png" alt="" class="img-cover">
                                 </figure>
                                 <p class="card-subtitle">HTML CSS JS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        Kotik Bot
+                                        FoodFast
                                     </h1>
                                     <p class="card-text">
-                                        Multi-functional discord bot
+                                        Website untuk menjual makanan online
                                     </p>
                                     <div class="card-button">
                                         <a href="#" class="btn btn-primary">
@@ -152,31 +159,106 @@
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="card-list col-4">
+                            <div class="card-list element-item col-4 html css js" data-category="transition">
                                 <figure class="card-img">
-                                    <img src="./assets/images/project5.png" alt="" class="img-cover">
+                                    <img src="./assets/images/gamemax.png" alt="" class="img-cover">
                                 </figure>
-                                <p class="card-subtitle">Vue TS Less</p>
+                                <p class="card-subtitle">HTML CSS JS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        Portfolio
+                                        Gamemax
                                     </h1>
                                     <p class="card-text">
-                                        You’re using it rn
+                                        Website Gaming Online
                                     </p>
                                     <div class="card-button">
                                         <a href="#" class="btn btn-primary">
-                                            Github &lt;~&gt;
+                                            Live &lt;~&gt;
                                         </a>
                                     </div>
                                 </div>
                             </div>
-    
+                            <div class="card-list element-item col-4 html css js" data-category="transition">
+                                <figure class="card-img">
+                                    <img src="./assets/images/anonecommerce.png" alt="" class="img-cover">
+                                </figure>
+                                <p class="card-subtitle">HTML CSS JS</p>
+                                <div class="card-details">
+                                    <h1 class="card-title">
+                                        Anon Ecommerce
+                                    </h1>
+                                    <p class="card-text">
+                                        Website Kosmetik Online
+                                    </p>
+                                    <div class="card-button">
+                                        <a href="#" class="btn btn-primary">
+                                            Live &lt;~&gt;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list element-item col-4 html css" data-category="transition">
+                                <figure class="card-img">
+                                    <img src="./assets/images/resultrondovision.png" alt="" class="img-cover">
+                                </figure>
+                                <p class="card-subtitle">HTML CSS</p>
+                                <div class="card-details">
+                                    <h1 class="card-title">
+                                        Rondovision E-commerce
+                                    </h1>
+                                    <p class="card-text">
+                                        Website E-commerce
+                                    </p>
+                                    <div class="card-button">
+                                        <a href="#" class="btn btn-primary">
+                                            Live &lt;~&gt;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list element-item col-4 html css" data-category="transition">
+                                <figure class="card-img">
+                                    <img src="./assets/images/resultntfx.png" alt="" class="img-cover">
+                                </figure>
+                                <p class="card-subtitle">HTML CSS </p>
+                                <div class="card-details">
+                                    <h1 class="card-title">
+                                        NTFX
+                                    </h1>
+                                    <p class="card-text">
+                                        Website Design
+                                    </p>
+                                    <div class="card-button">
+                                        <a href="#" class="btn btn-primary">
+                                            Live &lt;~&gt;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list element-item col-4 html css nextjs" data-category="transition">
+                                <figure class="card-img">
+                                    <img src="./assets/images/simpleecommerce.png" alt="" class="img-cover">
+                                </figure>
+                                <p class="card-subtitle">HTML CSS NEXTJS </p>
+                                <div class="card-details">
+                                    <h1 class="card-title">
+                                        Simple Ecommerce
+                                    </h1>
+                                    <p class="card-text">
+                                        Website E-commerce Sederhana
+                                    </p>
+                                    <div class="card-button">
+                                        <a href="https://app.netlify.com/sites/webstoreordinary" class="btn btn-primary">
+                                            Live &lt;~&gt;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
 
-                    <div>
+                    <div style="padding-top: 81px;">
                         <h1 class="section-title">
                             <span class="span">#</span>small-apps
                         </h1>
@@ -186,36 +268,36 @@
                         <div class="card-wrapper">
     
                             <div class="card-list col-4">
-                                <p class="card-subtitle">Discord.js TS JS</p>
+                                <p class="card-subtitle">HTML CSS REACTJS GRAPHSQL</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        Bot boilerplate
+                                        Graph CMS Blog
                                     </h1>
                                     <p class="card-text">
-                                        Start creating scalable discord.js bot with typescript in seconds
+                                        CMS Blog menggunakan layanan GraphSQL
                                     </p>
                                     <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
+                                        <a href="https://graphcmsblog-seven.vercel.app" class="btn btn-primary">
                                             Live &lt;~&gt;
                                         </a>
-                                        <a href="#" class="btn btn-secondary">
+                                        <!-- <a href="#" class="btn btn-secondary">
                                             Cached >=
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
                             
                             <div class="card-list col-4">
-                                <p class="card-subtitle">VUE JS CSS</p>
+                                <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        My Blog
+                                        Realstore Estate
                                     </h1>
                                     <p class="card-text">
-                                        Front-end of my future blog website written in vue
+                                        Website untuk info mengenai harga kamar hotel
                                     </p>
                                     <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
+                                        <a href="https://realtor-estate-iota.vercel.app/" class="btn btn-primary">
                                             Live &lt;~&gt;
                                         </a>
                                     </div>
@@ -223,33 +305,33 @@
                             </div>
     
                             <div class="card-list col-4">
-                                <p class="card-subtitle">Figma</p>
+                                <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        Chess pro
+                                        Tiktik Application
                                     </h1>
                                     <p class="card-text">
-                                        Figma landing page about service for viewing chess tournaments
+                                        Cloning Tiktok Application versi sederhana nya
                                     </p>
                                     <div class="card-button">
-                                        <a href="#" class="btn btn-secondary">
-                                            Cached >=
+                                        <a href="https://tiktik-application.vercel.app/" class="btn btn-secondary">
+                                            Live >=
                                         </a>
                                     </div>
                                 </div>
                             </div>
     
                             <div class="card-list col-4">
-                                <p class="card-subtitle">Figm</p>
+                                <p class="card-subtitle">HTML CSS REACTJS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        Crash protect website
+                                        CitCat Application
                                     </h1>
                                     <p class="card-text">
-                                        Figma template for website about anti-raid, anti-crash discord bot
+                                        Application for citcat with other people or friends
                                     </p>
                                     <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
+                                        <a href="https://citcat-hijaumuda.vercel.app/" class="btn btn-primary">
                                             Live &lt;~&gt;
                                         </a>
                                     </div>
@@ -257,68 +339,17 @@
                             </div>
     
                             <div class="card-list col-4">
-                                <p class="card-subtitle">HTML CSS</p>
+                                <p class="card-subtitle">HTML CSS NEXTJS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        CSS expirements
+                                        My Lyrics
                                     </h1>
                                     <p class="card-text">
-                                        Collection of my different little projects in css
+                                        Application for songs
                                     </p>
                                     <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Github &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-list col-4">
-                                <p class="card-subtitle">Leo Neovim</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        Web Dev nvim config
-                                    </h1>
-                                    <p class="card-text">
-                                        Config for neovim perfect for web developer
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Github &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card-list col-4">
-                                <p class="card-subtitle">Python Quart HTML</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        Ooku
-                                    </h1>
-                                    <p class="card-text">
-                                        Simple link shortener with auth
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Github &lt;~&gt;
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card-list col-4">
-                                <p class="card-subtitle">Figma</p>
-                                <div class="card-details">
-                                    <h1 class="card-title">
-                                        School website
-                                    </h1>
-                                    <p class="card-text">
-                                        Figma template website for my school
-                                    </p>
-                                    <div class="card-button">
-                                        <a href="#" class="btn btn-primary">
-                                            Github &lt;~&gt;
+                                        <a href="https://app.netlify.com/sites/my-lyrics" class="btn btn-primary">
+                                            Live &lt;~&gt;
                                         </a>
                                     </div>
                                 </div>
@@ -368,6 +399,35 @@
 
         </div>
     </footer>
+
+    <script type="text/javascript">
+
+        const btnOpen = document.querySelector("[data-nav-open]");
+        const btnClose = document.querySelector("[data-nav-close]");
+        const navMobile = document.querySelector("[data-nav-mobile]");
+
+        btnOpen.addEventListener("click", () => {
+            navMobile.classList.toggle("active");
+        })
+
+        btnClose.addEventListener("click", () => {
+            navMobile.classList.remove("active");
+        })
+
+    </script>
+
+    <!--==================== JQUERY ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <!--==================== ISOTOPE ====================-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+    
     
 </body>
 </html>

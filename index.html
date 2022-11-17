@@ -13,12 +13,39 @@
 </head>
 <body>
 
+    <div class="line-social">
+        <span></span>
+        <ul class="my-socialmedia">
+            <li>
+                <a href="https://discordapp.com/users/DuniaGymeea#0128">
+                    <img src="./assets/images/icons/discord.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/AdnanErlansyah" target="_blank">
+                    <img src="./assets/images/icons/twitter.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/adnanerlansyah403" target="_blank">
+                    <img src="./assets/images/icons/telegram-white.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <header class="header">
         <div class="container">
 
-            <a href="#home" class="logo">
-                <img src="./assets/images/adn.png" alt="">
-            </a>
+            <div class="logo-wrapper">
+                <a href="#home" class="logo">
+                    <img src="./assets/images/adn.png" alt="">
+                </a>
+                
+                <button class="nav-open" data-nav-open>
+                    <img src="./assets/images/icons/bars.svg" alt="">
+                </button>
+            </div>
     
             <nav class="navbar">
                 <ul>
@@ -26,16 +53,63 @@
                         <a href="#home" class="nav-link"><span class="span">#</span>home</a>
                     </li>
                     <li class="nav-list">
-                        <a href="#projects" class="nav-link"><span class="span">#</span>works</a>
+                        <a href="./projects.html" class="nav-link"><span class="span">#</span>works</a>
                     </li>
                     <li class="nav-list">
-                        <a href="#about" class="nav-link"><span class="span">#</span>about-me</a>
+                        <a href="./about.html" class="nav-link"><span class="span">#</span>about-me</a>
                     </li>
                     <li class="nav-list">
-                        <a href="#contacts" class="nav-link"><span class="span">#</span>contracts</a>
+                        <a href="./contracts.html" class="nav-link"><span class="span">#</span>contracts</a>
                     </li>
                 </ul>
             </nav>
+            
+            <div class="nav-mobile" data-nav-mobile>
+                <div class="nav-header">
+                    <figure class="logo">
+                        <img src="./assets/images/adn.png" alt="">
+                    </figure>
+                    <div class="nav-close">
+                        <button data-nav-close>
+                            <img src="./assets/images/icons/times2.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                
+                <ul class="navs">
+                    <li class="nav-list">
+                        <a href="#home"><span class="span">#</span>home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="./projects.html"><span class="span">#</span>works</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="./about.html"><span class="span">#</span>about-me</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="./contracts.html"><span class="span">#</span>contacts</a>
+                    </li>
+                </ul>
+
+                <ul class="socials">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/discord.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icons/figma.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
 
         </div>
 
@@ -48,18 +122,18 @@
             <section class="section hero" id="hero">
                 <div class="container">
 
-                    <div class="content">
-                        <h1 class="text-lg">Adnan is a <span class="span">web designer</span> and <span class="span">Fullstack developer</span></h1>
-                        <p class="text-md">He crafts responsive websites where technologies <br> meet creativity</p>
+                    <div class="content col-6">
+                        <h1 class="text-lg">My name is Adnan and I&apos;m <span class="span">Fullstack developer</span></h1>
+                        <p class="text-md">Dia membangun sebuah website yang responsive dan penuh dengan functionallity dan inovatif</p>
 
-                        <button class="btn btn-primary">
+                        <a href="mailto:adnanerlansyah403@gmail.com" class="btn btn-primary">
                             Contact me !!
-                        </button>
+                        </a>
                     </div>
 
-                    <div class="img">
+                    <div class="img col-4">
                         <figure>
-                            <img src="./assets/images/my-photo.png" class="img-cover" alt="">
+                            <img src="./assets/images/effect-my-photo.png" class="img-cover" alt="">
                             <div class="badge">
                                 <span class="box-pink"></span>
                                 <p><span class="gray">Currently is </span>Freshgraduate</p>
@@ -107,15 +181,15 @@
 
                             <div class="card-list col-4">
                                 <figure class="card-img">
-                                    <img src="./assets/images/project1.png" alt="" class="img-cover">
+                                    <img src="./assets/images/foodfast.png" alt="" class="img-cover">
                                 </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
+                                <p class="card-subtitle">HTML CSS JS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        ChertNodes
+                                        FoodFast
                                     </h1>
                                     <p class="card-text">
-                                        Minecraft servers hosting
+                                        Website untuk menjual makanan online
                                     </p>
                                     <div class="card-button">
                                         <a href="#" class="btn btn-primary">
@@ -130,15 +204,15 @@
                             
                             <div class="card-list col-4">
                                 <figure class="card-img">
-                                    <img src="./assets/images/project2.png" alt="" class="img-cover">
+                                    <img src="./assets/images/gamemax.png" alt="" class="img-cover">
                                 </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
+                                <p class="card-subtitle">HTML CSS JS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        ChertNodes
+                                        Gamemax
                                     </h1>
                                     <p class="card-text">
-                                        Minecraft servers hosting
+                                        Website untuk gaming
                                     </p>
                                     <div class="card-button">
                                         <a href="#" class="btn btn-primary">
@@ -150,15 +224,15 @@
 
                             <div class="card-list col-4">
                                 <figure class="card-img">
-                                    <img src="./assets/images/project3.png" alt="" class="img-cover">
+                                    <img src="./assets/images/anonecommerce.png" alt="" class="img-cover">
                                 </figure>
-                                <p class="card-subtitle">HTML CSS Python Flask</p>
+                                <p class="card-subtitle">HTML CSS JS</p>
                                 <div class="card-details">
                                     <h1 class="card-title">
-                                        ChertNodes
+                                        AnonEcommerce
                                     </h1>
                                     <p class="card-text">
-                                        Minecraft servers hosting
+                                        Website Jual Beli Barang Online
                                     </p>
                                     <div class="card-button">
                                         <a href="#" class="btn btn-primary">
@@ -194,10 +268,16 @@
                                 <h4>Languages</h4>
                                 <ul>
                                     <li>
-                                        Typescript Lua
+                                        HTML
                                     </li>
                                     <li>
-                                        Python Javascript
+                                        CSS
+                                    </li>
+                                    <li>
+                                        PHP
+                                    </li>
+                                    <li>
+                                        JAVASCRIPT
                                     </li>
                                 </ul>
                             </div>
@@ -218,13 +298,13 @@
                                 <h4>Tools</h4>
                                 <ul>
                                     <li>
-                                        VSCode Neovim Linux
+                                        VSCode
                                     </li>
                                     <li>
-                                        Figma XFCE Arch 
+                                        Figma 
                                     </li>
                                     <li>
-                                        Git Font Awesome 
+                                        Git 
                                     </li>
                                 </ul>
                             </div>
@@ -233,10 +313,7 @@
                                 <h4>Other</h4>
                                 <ul>
                                     <li>
-                                        HTML CSS EJS SCSS
-                                    </li>
-                                    <li>
-                                        REST Jinja
+                                        EJS SCSS
                                     </li>
                                 </ul>
                             </div>
@@ -245,13 +322,13 @@
                                 <h4>Frameworks</h4>
                                 <ul>
                                     <li>
-                                        React Vue
+                                        ReactJS
                                     </li>
                                     <li>
-                                        Disnake Discord.js
+                                        NextJS
                                     </li>
                                     <li>
-                                        Flask Express.js
+                                        Laravel
                                     </li>
                                 </ul>
                             </div>
@@ -275,9 +352,9 @@
                             <p>
                                 Hello, i&apos;m Adnan E! <br> <br>
     
-                                I&apos;m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. <br> <br>
+                                Nama saya Adnan Erlansyah dari Bekasi, Indonesia. Saya bisa membangun sebuah website yang penuh dengan fungsi-fungsi untuk layanan user. <br> <br>
     
-                                Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+                                Bisa mengubah website menjadi lebih user-friendly dan juga penuh dengan functionallity yang sering atau akan di gunakan oleh banyak user.
                             </p>
     
                             <a href="#" class="btn btn-primary">
@@ -301,7 +378,7 @@
                     <div class="content">
 
                         <p class="text">
-                            I&apos;m interested in freelance opportunities. However, if you have other request or question, don&apos;t hesitate to contact me
+                            Saya sangat suka sekali peluang menjadi freelance. Tapi bagaimanapun, jika anda memiliki pertanyaan atau sebuah permintaan untuk membangun sebuah website. Maka anda bisa hubungi saya lebih lanjut di kontak yang sudah tertera di bawah ini.
                         </p>
 
                         <div class="socials">
@@ -338,7 +415,7 @@
                         <img src="./assets/images/adn.png" alt="">
                         <p>adnanerlansyah403@gmail.com</p>
                     </figure>
-                    <p>Web designer and fullstack developer based <br> in Indonesian</p>
+                    <p>Web designer and fullstack developer based in Indonesian</p>
                 </div>
                 <div class="footer-contact">
                     <h1 class="section-title">Media</h1>
@@ -364,6 +441,22 @@
 
         </div>
     </footer>
+
+    <script type="text/javascript">
+
+        const btnOpen = document.querySelector("[data-nav-open]");
+        const btnClose = document.querySelector("[data-nav-close]");
+        const navMobile = document.querySelector("[data-nav-mobile]");
+
+        btnOpen.addEventListener("click", () => {
+            navMobile.classList.toggle("active");
+        })
+
+        btnClose.addEventListener("click", () => {
+            navMobile.classList.remove("active");
+        })
+
+    </script>
     
 </body>
 </html>

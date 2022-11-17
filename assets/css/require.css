@@ -63,6 +63,10 @@ input, textarea, button {
     background-color: transparent;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: var(--ff-firacode);
     background-color: var(--fc-black);
@@ -72,6 +76,10 @@ body {
 
 a {
     color: #fff;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 
@@ -95,6 +103,8 @@ a {
 
 .container {
     padding-inline: 171px;
+    /* display: flex;
+    align-items: center; */
 }
 
 .text-lg {
@@ -109,11 +119,12 @@ a {
     padding: 8px 16px;
     color: #fff;
     cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
 .btn-primary {
     background-color: transparent;
-    border: 1px solid var(--fc-primary);
+    border: 1px solid var(--fc-primary) !important;
     transition: .3s ease-in;
     font-weight: bold;
 }
@@ -165,12 +176,6 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.container {
-    margin: 0 auto;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .container .section-title {
@@ -236,6 +241,70 @@ a {
     align-items: center;
     gap: 16px;
     margin-top: 16px;
+}
+
+.nav-open {
+    display: none;
+}
+
+.line-social {
+    position: fixed;
+    top: 0;
+    left: 17px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    gap: 8px;
+}
+
+.line-social span {
+    display: block;
+    width: 1px;
+    height: 191px;
+    background-color: #ffffff;
+}
+
+.line-social ul.my-socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.line-social ul.my-socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+.tabs-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+    margin-inline: auto;
+}
+
+.tabs-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.tabs-list li button {
+    font-size: 20px;
+}
+
+.tabs-list li:hover button.btn {
+    border-color: #C778DD !important;
+}
+
+.tabs-info {
+    margin-block: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -310,4 +379,138 @@ a {
     align-items: center;
     margin-top: 12px;
     gap: 14px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 992px) {
+
+    .line-social {
+        display: none;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    .container {
+        padding-inline: 16px !important;
+        gap: 44px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .section-title::after {
+        display: none;
+    }
+
+    .card-list {
+        flex: auto !important;
+        height: auto !important;
+    }
+
+    .favorite .container .content .image {
+        display: none;
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
+    .greeting {
+        display: none;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* NAV MOBILE */
+
+    .logo-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-open {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        padding-inline: 16px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+        background-color: var(--fc-black);
+        z-index: 5;
+        transition: .3s ease-in-out;
+    }
+
+    .nav-mobile.active {
+        left: 0;
+    }
+
+    .nav-mobile ul li a img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .nav-header {
+        padding-block: 19px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navs {
+        margin-top: 47px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .navs li a {
+        font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    }
+
+    .nav-mobile .socials {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }
